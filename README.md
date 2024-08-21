@@ -1,6 +1,6 @@
-# A Simple Encoder-Only Momentum Transformer: momentum_former
+# A Simple Encoder-Only Momentum Transformer: Momentum_former
 
-This repository contains the implementation of a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by the transformer model proposed by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
+Momentum_former is a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by the transformer model proposed by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
 
 + Use LSTM as positional encoding.
 + Use only encoder part of a transformer.
@@ -25,8 +25,8 @@ The model is trained and evaluated using an expanding window approach. A dataset
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/simple-encoder-momentum-transformer.git
-   cd simple-encoder-momentum-transformer
+   git clone https://github.com/yourusername/momentum_former.git
+   cd momentum_former
    ```
 
 2. Install the dependencies:
