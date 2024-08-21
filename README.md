@@ -14,10 +14,9 @@ The model is trained and evaluated using an expanding window approach. A dataset
 - `datasets/`: Contains the custom dataset class for loading and processing futures time series data.
 - `models/`: Contains the transformer model and the custom transformer layer used in the model.
 - `losses/`: Contains the custom loss function for optimizing the Sharpe ratio.
-- `utils/`: Contains utility functions for weight decay and trading strategy calculations.
+- `utils/`: Contains utility functions for weight decay, Sharpe ratio and trading strategy calculations.
 - `train.py`: The main script for training and evaluating the model across different years.
 - `requirements.txt`: Lists the dependencies required to run the project.
-- `README.md`: This file, providing an overview of the project.
 
 ## Getting Started
 
@@ -33,6 +32,14 @@ The model is trained and evaluated using an expanding window approach. A dataset
    ```sh
    pip install -r requirements.txt
    ```
+
+### Usage
+
+To train and evaluate the model, run:
+
+```sh
+python train.py
+```
 
 ## References
 
