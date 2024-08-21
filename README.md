@@ -1,4 +1,4 @@
-# momentum_former: A Simple Encoder-Only Momentum Transformer
+# A Simple Encoder-Only Momentum Transformer: momentum_former
 
 This repository contains the implementation of a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by the transformer model proposed by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
 
