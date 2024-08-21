@@ -1,6 +1,13 @@
-# momentum_former: Simple Encoder-Only Momentum Transformer
+# momentum_former: A Simple Encoder-Only Momentum Transformer
 
-This repository contains the implementation of a transformer-based model for futures prediction using momentum-based features. The model is trained and evaluated across multiple years, and the performance is measured using metrics like Sharpe Ratio, cumulative return, and overall volatility.
+This repository contains the implementation of a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by the transformer model proposed by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared with the initial paper, this architecture simplifies the original model and includes the following essential parts:
+
++ Use LSTM as positional encoding.
++ Use only encoder part of a transformer.
++ Use robust volatility metrics, returns over different time scales, and MACD (Moving Average Convergence Divergence) indicators as features.
++ Use Multi-Head attention.
+
+The model is trained and evaluated using an expanding window approach. A dataset with 24 futures from 2001 to 2023 is used. The dataset is trained for at least 10 years, validated on the following year, and tested the year after the validation year. The model performance is evaluated using an overall Sharpe ratio across test years.  
 
 ## Project Structure
 
@@ -27,3 +34,13 @@ This repository contains the implementation of a transformer-based model for fut
    pip install -r requirements.txt
    ```
 
+## References
+
+```bibtex
+@article{wood2021trading,
+  title={Trading with the momentum transformer: An intelligent and interpretable architecture},
+  author={Wood, Kieran and Giegerich, Sven and Roberts, Stephen and Zohren, Stefan},
+  journal={arXiv preprint arXiv:2112.08534},
+  year={2021}
+}
+```
