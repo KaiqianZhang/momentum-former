@@ -1,6 +1,6 @@
 # momentum_former: A Simple Encoder-Only Momentum Transformer
 
-This repository contains the implementation of a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by the transformer model proposed by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared with the initial paper, this architecture simplifies the original model and includes the following essential parts:
+This repository contains the implementation of a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by the transformer model proposed by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
 
 + Use LSTM as positional encoding.
 + Use only encoder part of a transformer.
@@ -36,11 +36,10 @@ The model is trained and evaluated using an expanding window approach. A dataset
 
 ## References
 
-```bibtex
-@article{wood2021trading,
-  title={Trading with the momentum transformer: An intelligent and interpretable architecture},
-  author={Wood, Kieran and Giegerich, Sven and Roberts, Stephen and Zohren, Stefan},
-  journal={arXiv preprint arXiv:2112.08534},
-  year={2021}
-}
-```
++ Wood, K., Giegerich, S., Roberts, S., & Zohren, S. (2021). Trading with the momentum transformer: An intelligent and interpretable architecture. arXiv preprint arXiv:2112.08534.
+
++ Lim, B., & Zohren, S. (2021). Time-series forecasting with deep learning: a survey. Philosophical Transactions of the Royal Society A, 379(2194), 20200209.
+  
++ Fischer, T., & Krauss, C. (2018). Deep learning with long short-term memory networks for financial market predictions. European journal of operational research, 270(2), 654-669.
+  
++ Liang, Z., Chen, H., Zhu, J., Jiang, K., & Li, Y. (2018). Adversarial deep reinforcement learning in portfolio management. arXiv preprint arXiv:1808.09940.
