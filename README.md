@@ -1,6 +1,6 @@
-# A Simple Encoder-Only Momentum Transformer: Momentum_former
+# A Simple Encoder-Only Momentum Transformer: Momentum-former
 
-Momentum_former is a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
+Momentum-former is a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
 
 + Use LSTM as positional encoding.
 + Use only encoder part of a transformer.
@@ -23,8 +23,8 @@ The model is trained and evaluated using an expanding window approach. A dataset
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/momentum_former.git
-   cd momentum_former
+   git clone https://github.com/yourusername/momentum-former.git
+   cd momentum-former
    ```
 
 2. Install the dependencies:
