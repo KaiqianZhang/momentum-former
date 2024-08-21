@@ -1,13 +1,12 @@
 # A Simple Encoder-Only Momentum Transformer: Momentum_former
 
-Momentum_former is a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by the transformer model proposed by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
+Momentum_former is a transformer-based model for futures prediction and portfolio optimization using a momentum trading strategy. The architecture is inspired by [Kieran Wood et al. (2021)](https://arxiv.org/abs/2112.08534). Compared to their paper, this architecture simplifies the original model and includes the following essential parts:
 
 + Use LSTM as positional encoding.
 + Use only encoder part of a transformer.
 + Use robust volatility metrics, returns over different time scales, and MACD (Moving Average Convergence Divergence) indicators as features.
-+ Use Multi-Head attention.
 
-The model is trained and evaluated using an expanding window approach. A dataset with 24 futures from 2001 to 2023 is used. The dataset is trained for at least 10 years, validated on the following year, and tested the year after the validation year. The model performance is evaluated using an overall Sharpe ratio across test years.  
+The model is trained and evaluated using an expanding window approach. A dataset with 24 futures from 2001 to 2023 is used. The model performance is evaluated using an overall Sharpe ratio across test years.  
 
 ## Project Structure
 
